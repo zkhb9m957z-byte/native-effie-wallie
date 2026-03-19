@@ -7,6 +7,71 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid x:Name="mainPanel">
+            
+
+            <Border Background="LightBlue"
+                    CornerRadius="30"
+                    Padding="40"
+                    Width="700"
+                    HorizontalAlignment="Center">
+
+                <StackPanel HorizontalAlignment="Center">
+
+                    <TextBlock Text="➕ Het Rekenspel ➖"
+                               FontSize="50"
+                               FontWeight="Bold"
+                               Foreground="Yellow"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,20"/>
+
+                    <TextBlock x:Name="sumTB"
+                               FontSize="27"
+                               Height="50"
+                               Margin="0,0,0,20"
+                               HorizontalAlignment="Center" Width="310"
+                               Background="White"/>
+
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+                        <Button x:Name="checkAnswerButton"
+                                Content="🧮"
+                                FontSize="27"
+                                Height="50"
+                                Background="Yellow"
+                                Foreground="DarkOrange"  
+                                Margin="0,0,0,20" Click="checkAnswerButton_Click"/>
+
+                        <TextBox x:Name="answerTB"
+                                FontSize="27"
+                                Height="50"
+                                Margin="20,0,0,20" Width="148"
+                                Background="White"/>
+                    </StackPanel>
+
+                    <Button x:Name="newMathButton"
+                            Content="Nieuwe Som"
+                            FontSize="27"
+                            Height="45"
+                            Background="Yellow"
+                            Foreground="DarkOrange" 
+                            Margin="0,0,0,10"
+                            Click="newMathButton_Click"
+                            HorizontalAlignment="Center" Width="310"/>
+
+                    <TextBlock x:Name="ScoreTB"
+                               FontWeight="Bold"
+                               FontSize="20"
+                               Margin="0,10,0,0"
+                               HorizontalAlignment="Center"
+                               Text="Score: 0"
+                                Foreground="Yellow"/>
+
+                </StackPanel>
+
+            </Border>
+
+        </Grid>
 
     </Grid>
 </Window>
